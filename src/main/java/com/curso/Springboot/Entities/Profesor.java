@@ -46,4 +46,8 @@ public class Profesor {
     public void setTelefono(String telefono) {
         this.telefono = telefono;
     }
+
+    public Long getId() {
+        return id;
+    }
 }

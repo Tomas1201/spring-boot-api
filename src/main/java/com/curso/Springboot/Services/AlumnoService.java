@@ -18,8 +18,6 @@ public class AlumnoService {
     private AlumnoRepository AlumnoRepository;
 
     private Profesor pe = new Profesor();
-    String pepe = String.
-
 
 
 
@@ -34,5 +32,13 @@ public class AlumnoService {
 
     public void saveorupdate(Alumno alu){
         AlumnoRepository.save(alu);
+    }
+
+    public List<Alumno> getBynames(String name){
+        return AlumnoRepository.findBynombre(name);
+    }
+
+    public List<Alumno> getByapellidos(String name){
+        return AlumnoRepository.findByapellido(name);
     }
 }

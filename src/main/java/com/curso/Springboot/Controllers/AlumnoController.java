@@ -16,6 +16,11 @@ public class AlumnoController {
     @Autowired
     private AlumnoService AlumnoService;
 
+    /**
+     * @
+     * @param
+     * @return
+     */
     @GetMapping
     public List<Alumno> getallalumnos(){
         return AlumnoService.getallAlumnos();

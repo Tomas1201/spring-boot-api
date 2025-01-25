@@ -14,7 +14,7 @@ public class AsignaturaService {
     @Autowired
     private AsignaturaRepository asignaturaRepository;
 
-    public List<Asignatura> traertodo(){
+    public List<Asignatura> getAll(){
        return asignaturaRepository.findAll();
     }
 
@@ -25,4 +25,5 @@ public class AsignaturaService {
     public void Create_Update(Asignatura asi){
         asignaturaRepository.save(asi);
     }
+
 }

@@ -18,7 +18,7 @@ public class AsignaturaController {
 
     @GetMapping
     public List<Asignatura> todasAsignaturas(){
-        return asignaturaService.traertodo();
+        return asignaturaService.getAll();
     }
 
     @GetMapping("/{id}")
